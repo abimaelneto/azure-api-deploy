@@ -1,20 +1,38 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Contents of /weather-api/weather-api/README.md
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+# Weather API
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+This project is a simple Node.js application using Express that queries a weather API to fetch and display temperature data for the last 7 days in Curitiba. The application provides temperature values in Celsius, Fahrenheit, and Kelvin, along with an indication of whether the temperature was cold, warm, or hot.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## Setup Instructions
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd weather-api
+   ```
+
+3. Install the dependencies:
+   ```
+   npm install
+   ```
+
+4. Create a `.env` file based on the `.env.example` file and add your API keys.
+
+5. Start the application:
+   ```
+   npm start
+   ```
+
+## Usage
+
+Once the application is running, you can access the weather data by sending a GET request to the following endpoint:
+```
+GET /weather
+```
+
+This will return a JSON response with the temperature data for the last 7 days in Curitiba.
